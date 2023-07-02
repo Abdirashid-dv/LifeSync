@@ -8,6 +8,7 @@ LifeSync is a desktop application designed to simplify health management for use
 - [Usage](#usage)
 - [API Keys](#api-keys)
 - [Features](#features)
+- [Email Configuration](#email-configuration)
 - [License](#license)
 - [Contact](#contact)
 
@@ -39,6 +40,25 @@ To use certain features of the project, you need to set up the required API keys
 2. Reminders: Users can manage their reminders, including adding, updating, listing, and deleting reminders.
 3. Nearest Health Center Finder: Users can find the nearest hospital and pharmacy based on their location.
 4. Chatbot: Users can interact with a chatbot that provides health-related information and assistance.
+
+## Email Configuration
+
+To configure the email functionality in the application, follow these steps:
+
+1. Open the `reminders_main.py` file in the `home_pg` folder.
+2. Locate the `send_reminder_email` function.
+3. In the function, find the email configuration section.
+4. Set the `sender_email` variable to your email address.
+5. Set the `sender_password` variable to your email password.
+6. Update the SMTP server and port if necessary.
+
+```python
+# Email configuration
+sender_email = 'your-email@example.com'  # Replace with your email
+sender_password = 'your-password'  # Replace with your email password
+smtp_server = 'smtp.gmail.com'
+smtp_port = 587
+```
 
 ## License
 
