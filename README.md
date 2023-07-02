@@ -69,4 +69,5 @@ LifeSync is licensed under the MIT License. See the LICENSE file for more inform
 
 ## Contact
 
-For any inquiries or support, please email us at lifesync@example.com.
+- Twitter - [@Abdirashid_dv](https://twitter.com/Abdirashid_dv)
+- LinkedIn - [@abdulrashid-mowlid](https://www.linkedin.com/in/abdulrashid-mowlid-a1937915a/)
