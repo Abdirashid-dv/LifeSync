@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/log-out.svg</file>
+    <file>icons/chevron-down.svg</file>
+    <file>icons/chevron-up.svg</file>
+    <file>icons/send.svg</file>
+    <file>icons/navigation.svg</file>
+    <file>icons/message-circle.svg</file>
+    <file>icons/chevrons-down.svg</file>
+    <file>icons/menu-vertical.png</file>
+    <file>icons/logo.svg</file>
+    <file>icons/WorldMap.svg</file>
+    <file>icons/person.svg</file>
+    <file>icons/bell.svg</file>
+    <file>icons/map-pin.svg</file>
+    <file>icons/navigation-2.svg</file>
+    <file>icons/location.svg</file>
+    <file>icons/calendar.svg</file>
+    <file>icons/arrow-left-circle.svg</file>
+    <file>icons/arrow-right-circle.svg</file>
+    <file>icons/chevrons-right.svg</file>
+    <file>icons/bell.svg</file>
+    <file>icons/chevrons-left.svg</file>
+    <file>icons/map-pin.svg</file>
+  </qresource>
+</RCC>

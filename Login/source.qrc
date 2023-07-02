@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>LifeSync.png</file>
+  </qresource>
+</RCC>

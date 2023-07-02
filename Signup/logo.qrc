@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>LifeSync.png</file>
+  </qresource>
+  <qresource prefix="vector">
+    <file>healthcare.png</file>
+  </qresource>
+</RCC>

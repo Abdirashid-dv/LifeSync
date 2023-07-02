@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1565</width>
+    <height>935</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1565</width>
+    <height>935</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1565</width>
+    <height>935</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="menu_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>0</y>
+      <width>271</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#menu_widget{
+background-color:#3E4862;
+border-radius: 30px;
+}
+#Reminders,
+#Nearest_h,
+#LifeSync,
+#Exit{
+background-color:#3E4862;
+color:#A4B0C3;
+border:none;
+}
+#Reminders:hover,
+#Nearest_h:hover,
+#LifeSync:hover,
+#Exit:hover{
+background-color:#2F3850;
+color:#FFF;
+border-radius:15px;
+}
+QPushButton:focus {
+    outline: none;
+}
+</string>
+    </property>
+    <widget class="QPushButton" name="Reminders">
+     <property name="geometry">
+      <rect>
+       <x>54</x>
+       <y>200</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>  Reminders</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/icons/icons/bell.svg</normaloff>:/icons/icons/bell.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>17</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Nearest_h">
+     <property name="geometry">
+      <rect>
+       <x>54</x>
+       <y>300</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string> Nearest Hospital</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/icons/icons/navigation.svg</normaloff>:/icons/icons/navigation.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="yasli_amclar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>700</y>
+       <width>251</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/icons/icons/person.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QFrame" name="logo_frame">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>201</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#logo_frame{
+background-color: rgba(79, 99, 215,0.9);
+border-radius:15px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>91</width>
+        <height>76</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/icons/icons/logo.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>5</y>
+        <width>31</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#label_14{
+image: url(:/icons/icons/menu-vertical.png);
+background-color: #9CC2F4;
+border-radius: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="LifeSync">
+     <property name="geometry">
+      <rect>
+       <x>54</x>
+       <y>250</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>   LifeSync Bot</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/icons/icons/message-circle.svg</normaloff>:/icons/icons/message-circle.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Exit">
+     <property name="geometry">
+      <rect>
+       <x>54</x>
+       <y>630</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string> EXIT</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/icons/icons/log-out.svg</normaloff>:/icons/icons/log-out.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>1351</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:focus {
+    outline: none;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Reminder">
+     <property name="styleSheet">
+      <string notr="true">#Reminder{
+background-color: #DCE1EB;
+}
+#UserData{
+background-color: rgba(79, 99, 215,0.5);
+border-radius: 10px;
+}
+</string>
+     </property>
+     <widget class="QWidget" name="UserData" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>761</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* DateTime - QDateTimeEdit */
+QDateTimeEdit{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 4px;
+  background-color: #fff;
+  color: #000;
+}
+
+QDateTimeEdit::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: right;
+  width: 25px;
+  border-left-width: 1px;
+  border-left-color: #ccc;
+  border-left-style: solid;
+  background-color: #f5f5f5;
+  selection-color: #fff;
+  selection-background-color: #333;
+	image: url(:/icons/icons/calendar.svg);
+padding-left:3px;
+}
+
+/* Dosage, Duration, Frequency, MedicationName - QLineEdit */
+#Dosage,
+#Duration,
+#Duration,
+#MedicationName,
+#Search_input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 4px;
+  background-color: #fff;
+  color: #000;
+}
+#Priority,
+#Frequency{
+padding:8px 4px
+}
+
+QLineEdit:focus {
+  border-color: #555;
+}
+#Dosage::hover,
+#Search_input:hover,
+#Duration::hover,
+#Frequency::hover,
+#Duration::hover,
+#MedicationName::hover {
+border-color: #7A3AF8;
+}
+QPushButton {
+    background-color:#6B66EB ; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color:#4942E4; /* Darker green */
+}
+
+QPushButton:pressed {
+    background-color: #11009E; /* Even darker green */
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CCCCCC; /* Light gray */
+    selection-background-color: #6B66EB; /* Light gray for the selected item */
+    outline: none;
+}
+</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>471</width>
+         <height>339</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Medication Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="MedicationName">
+          <property name="placeholderText">
+           <string>Enter Medication Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Dosage</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="Dosage">
+          <property name="placeholderText">
+           <string>Dosage (e.g., 10 mg)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Frequency</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="Duration">
+          <property name="placeholderText">
+           <string>Duration (e.g., 7 days)</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Priority</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="Priority">
+          <item>
+           <property name="text">
+            <string>High</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Medium</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Low</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Refill Reminder</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDateEdit" name="Refill">
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2023</year>
+            <month>6</month>
+            <day>3</day>
+           </datetime>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="Frequency">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <item>
+           <property name="text">
+            <string>Once daily</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Twice daily</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Three times daily</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Once every two days</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Once weekly</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QTimeEdit" name="Time">
+          <property name="styleSheet">
+           <string notr="true">QTimeEdit::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    image: url(:/icons/icons/chevron-up.svg);
+    width: 25px;
+    height: 22px;
+
+}
+
+QTimeEdit::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    image: url(:/icons/icons/chevron-down.svg);
+    width: 25px;
+    height: 22px;
+}
+</string>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2023</year>
+            <month>6</month>
+            <day>3</day>
+           </datetime>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="Search_input">
+          <property name="placeholderText">
+           <string>Enter Medication Name</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="Add">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>10</y>
+         <width>181</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>ADD</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Update">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>60</y>
+         <width>181</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>UPDATE</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>110</y>
+         <width>181</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DELETE</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="List">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>160</y>
+         <width>181</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LIST</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Search">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>210</y>
+         <width>181</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>313</y>
+         <width>113</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#27374D</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>400</y>
+        <width>1281</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget::item:selected {
+    background-color: rgba(79, 99, 215,0.5);
+    color: #FFFFFF; /* Change this color to the desired text color */
+}
+</string>
+      </property>
+      <property name="rowCount">
+       <number>13</number>
+      </property>
+      <property name="columnCount">
+       <number>9</number>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>178</number>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QWidget" name="Calendar" native="true">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>20</y>
+        <width>501</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#Calendar{
+background-color: rgba(79, 99, 215,0.5);
+border-radius: 10px;
+}</string>
+      </property>
+      <widget class="QCalendarWidget" name="calendarWidget">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>15</y>
+         <width>481</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Calendar Widget Styles */
+QCalendarWidget {
+  background-color: #F8F6F4;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+QCalendarWidget QHeaderView {
+  background-color: #F8F6F4;
+  font-weight: bold;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+  background-color: #F8F6F4;
+	border: 2px solid  #F8F6F4;
+	border-bottom: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+QCalendarWidget QToolButton {
+  background-color: transparent;
+}
+
+QCalendarWidget QTableView {
+  selection-background-color: #A0B9E3;
+  alternate-background-color: #E3E4F3;
+outline: 0px;
+	border: 2px solid #F8F6F4;
+	border-top: 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+QCalendarWidget QTableView::item:selected {
+  color: #fff;
+}
+QCalendarWidget QTableView QTableCornerButton::section {
+  background-color: #F8F6F4;
+}
+
+QCalendarWidget QTableView QHeaderView::section {
+  background-color: #F8F6F4;
+}
+
+QCalendarWidget QSpinBox {
+  border: 1px solid #9BA3EB;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+QCalendarWidget QSpinBox:hover {
+  border-color: #A0B9E3;
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+  width: 15px;
+  border-left-width: 1px;
+}
+
+QCalendarWidget QSpinBox::up-arrow, QCalendarWidget QSpinBox::down-arrow {
+  image: url(up_down_arrow.png);
+}
+QCalendarWidget QToolButton#qt_calendar_prevmonth {
+/* delete default icons */
+  qproperty-icon: none; 
+margin-left:2px;
+border-radius: 5px;
+width: 50px;
+min-height: 20px;
+max-height:20px;
+image: url(:/icons/icons/arrow-left-circle.svg);
+}
+
+QCalendarWidget QToolButton#qt_calendar_nextmonth {
+qproperty-icon: none; 
+margin-right:2px;
+border-radius: 5px;
+width: 50px;
+min-height: 20px;
+max-height:20px;
+image:url(:/icons/icons/arrow-right-circle.svg);
+}
+
+QCalendarWidget QToolButton#qt_calendar_prevyear {
+qproperty-icon: none;
+image: url(:/icons/icons/chevrons-right.svg);
+}
+
+QCalendarWidget QToolButton#qt_calendar_nextyear {
+qproperty-icon: none;
+ image: url(:/icons/icons/chevrons-left.svg);
+}
+
+QCalendarWidget QMenu {
+  background-color: #F8F6F4;
+}
+
+QCalendarWidget QMenu::item {
+  padding: 5px;
+}
+
+QCalendarWidget QMenu::item:selected {
+  background-color: #A0B9E3;
+
+}
+
+QCalendarWidget QMenu::icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+/* Style for month and yeat buttons #################################### */
+
+#qt_calendar_yearbutton {
+    color: #000;
+	margin:5px;
+    border-radius: 4px;
+	font-size: 13px;
+	padding:4px 6px;
+}
+
+ #qt_calendar_monthbutton {
+	width: 110px;
+    color: #000;
+	font-size: 13px;
+	margin:5px 15px;
+    border-radius: 5px;
+	padding:4px 2px;
+}
+
+
+
+/* Style for year input lineEdit ######################################*/
+#qt_calendar_yearedit {
+    min-width:56px;
+    color: #000;
+    background: transparent;
+	font-size: 13px;
+	padding:0px 8px;
+}
+
+
+/* Style for year change buttons ######################################*/
+
+#qt_calendar_yearedit::up-button { 
+	image: url(:/icons/icons/chevrons-right.svg);
+    subcontrol-position: right;
+}
+
+#qt_calendar_yearedit::down-button { 
+	image: url(:/icons/icons/chevrons-left.svg);
+    subcontrol-position: left; 
+}
+
+#qt_calendar_yearedit::down-button, 
+#qt_calendar_yearedit::up-button {
+	width:15px;
+	padding: 0px 5px;
+	border-radius:3px;
+}
+
+
+
+</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Chatbot">
+     <property name="styleSheet">
+      <string notr="true">#Chatbot{
+background-color:#DCE1EB;
+}</string>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1321</width>
+        <height>921</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#frame{
+image: url(:/icons/icons/WorldMap.svg);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="chat_layout" native="true">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>70</y>
+         <width>1031</width>
+         <height>841</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#chat_layout{
+background-color:rgba(62, 72, 98,0.7);
+border-radius:20px;
+}</string>
+       </property>
+       <widget class="QFrame" name="option">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>50</y>
+          <width>651</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#option{
+background-color:rgba(62, 72, 98,0.9);
+border-radius:15px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>221</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #DCE1EB;</string>
+         </property>
+         <property name="text">
+          <string>Please select an option:</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="Useroption">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>60</y>
+           <width>491</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Open Sans</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CCCCCC; /* Light gray */
+   	selection-background-color: #6B66EB; /* Light gray for the selected item */
+    outline: none;
+
+}
+#Useroption{
+padding: 4px 8px;
+background-color:#A4B0C3;
+color: rgb(62, 72, 98);
+border-radius:4px;
+
+}
+QComboBox::down-arrow {
+    image: url(:/icons/icons/chevrons-down.svg);
+    width: 25px;
+    height: 25px;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    padding-left: 2px;
+ outline: none;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Ask for Information</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Request Medication Advice</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ask about Medication Side Effects</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ask for Dosage Instructions</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ask for Medication Storage Recommendations</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Inquire about Medication Precautions or Warnings</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Request Medication Formulations or Alternatives</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Report Medication Adverse Reactions</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Report Medication Effectiveness or Lack Thereof</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Question" native="true">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>210</y>
+          <width>651</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Question{
+background-color:rgba(62, 72, 98,0.9);
+border-radius:15px;
+}</string>
+        </property>
+        <widget class="QPlainTextEdit" name="usermsg">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Open Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#usermsg{
+background-color:#A4B0C3;
+border-radius:14px;
+padding: 4px 8px;
+}
+#usermsg:hover{
+color:rgb(62, 72, 98);
+}
+#usermsg QScrollBar {
+    background-color: #f2f2f2;
+    width: 8px;
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Send a massege.</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="send">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>156</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#send{
+background-color:rgba(62, 72, 98,0.8);
+color:#A4B0C3;
+border:none;
+border-radius:15px;
+}
+#send:hover{
+background-color:#2F3850;
+color:#FFF;
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>  Send</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icons/icons/send.svg</normaloff>:/icons/icons/send.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>17</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Result" native="true">
+        <property name="geometry">
+         <rect>
+          <x>209</x>
+          <y>430</y>
+          <width>651</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Result{
+background-color:rgba(62, 72, 98,0.9);
+border-radius:15px;
+}</string>
+        </property>
+        <widget class="QTextBrowser" name="BotAnswer">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>611</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#BotAnswer{
+background-color:#A4B0C3;
+border-radius:14px;
+}
+#BotAnswer QScrollBar {
+    background-color: #f2f2f2;
+    width: 8px;
+}
+QTextBrowser::verticalScrollBar {
+    background-color: rgba(62, 72, 98,0.9);
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+QTextBrowser::horizontalScrollBar {
+    background-color: rgba(62, 72, 98,0.9);
+    height: 12px; /* Set the height of the scrollbar */
+}
+
+QTextBrowser::verticalScrollBar:hover,
+QTextBrowser::horizontalScrollBar:hover {
+    background-color: #4F63D7; /* Set the background color when hovering */
+}
+
+QTextBrowser::verticalScrollBar::handle,
+QTextBrowser::horizontalScrollBar::handle {
+    background-color: #4F63D7; /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Set the border radius of the scrollbar handle */
+}
+
+QTextBrowser::verticalScrollBar::handle:hover,
+QTextBrowser::horizontalScrollBar::handle:hover {
+    background-color: #4F63D7; /* Set the color of the scrollbar handle when hovering */
+}
+
+QTextBrowser::verticalScrollBar::sub-page,
+QTextBrowser::horizontalScrollBar::sub-page {
+    background-color: none; /* Set the background color of the scrollable area */
+}
+
+QTextBrowser::verticalScrollBar::add-page,
+QTextBrowser::horizontalScrollBar::add-page {
+    background-color: none; /* Set the background color of the non-scrollable area */
+}
+</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>20</y>
+         <width>681</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis SemiBold</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#0A0C18;</string>
+       </property>
+       <property name="text">
+        <string>Welcome to Your Virtual Health Assistant! How can I assist you today?</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Nhospital">
+     <property name="styleSheet">
+      <string notr="true">#Nhospital{
+background-color:#DCE1EB;
+}
+#UserForm{
+background-color: rgba(79, 99, 215,0.5);
+border-radius: 10px;
+}</string>
+     </property>
+     <widget class="QGroupBox" name="UserForm">
+      <property name="geometry">
+       <rect>
+        <x>79</x>
+        <y>47</y>
+        <width>531</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Oswald</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox#UserForm{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 4px;
+	margin-left:13px;
+	color:#27374D;
+	margin-top:20px;
+}
+#Latitude,
+#Longitude{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 4px;
+  background-color: #fff;
+  color: #000;
+}
+#Latitude:hover,
+#Longitude:hover{
+border-color: #7A3AF8;
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Nearest Health Centers</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>331</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0">
+        <property name="spacing">
+         <number>11</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <family>Roboto Condensed</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>Enter Your Address</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="UserAddress">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>46</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#UserAddress{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 4px;
+  background-color: #fff;
+  color: #000;
+}
+#UserAddress:hover{
+border-color: #7A3AF8;
+}</string>
+          </property>
+          <property name="placeholderText">
+           <string>Enter your location address</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="font">
+           <font>
+            <family>Roboto Condensed</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>To Find Nearest Pharmacy</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="GetData">
+          <property name="minimumSize">
+           <size>
+            <width>55</width>
+            <height>59</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color:#6B66EB ; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color:#4942E4; /* Darker green */
+}
+
+QPushButton:pressed {
+    background-color: #11009E; /* Even darker green */
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CCCCCC; /* Light gray */
+    selection-background-color: #6B66EB; /* Light gray for the selected item */
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Find Nearest Pharmacy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <family>Roboto Condensed</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#27374D</string>
+          </property>
+          <property name="text">
+           <string>To Find Nearest Hospital</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Find">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>59</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color:#6B66EB ; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color:#4942E4; /* Darker green */
+}
+
+QPushButton:pressed {
+    background-color: #11009E; /* Even darker green */
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CCCCCC; /* Light gray */
+    selection-background-color: #6B66EB; /* Light gray for the selected item */
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Find Nearest Hospital</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="result" native="true">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>390</y>
+        <width>601</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#result{
+background-color:rgba(79, 99, 215,0.5);
+border-radius: 20px;
+}</string>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>531</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>331</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Oswald</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#27374D</string>
+       </property>
+       <property name="text">
+        <string>Here Is Your Nearest Hospital/Pharmacy Data:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="OpenLocation">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>290</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color:#6B66EB ; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color:#4942E4; /* Darker green */
+}
+
+QPushButton:pressed {
+    background-color: #11009E; /* Even darker green */
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CCCCCC; /* Light gray */
+    selection-background-color: #6B66EB; /* Light gray for the selected item */
+    outline: none;
+}</string>
+       </property>
+       <property name="text">
+        <string>Open Location</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>526</x>
+        <y>153</y>
+        <width>311</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/icons/icons/location.svg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="guide" native="true">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>480</y>
+        <width>531</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#guide{
+background-color:rgba(79, 99, 215,0.5);
+border-radius: 20px;
+}</string>
+      </property>
+      <widget class="QTextEdit" name="Guide_text">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>491</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#Guide_text{
+background-color:rgba(79, 99, 215,0.2);
+border-radius:10px;
+padding:4px 5px;
+color:#0A0C18;
+}</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Open Sans'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;1. Enter the address of your location in the input bar.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;2. Two buttons will be displayed: &amp;quot;Find Nearest Pharmacy&amp;quot; and &amp;quot;Find Nearest Hospital.&amp;quot; Click on the appropriate button based on the data you need.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;If you choose &amp;quot;Find Nearest Pharmacy&amp;quot;: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;4. The TextBrowser will process your location and display the nearest pharmacies based on your address. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;5. You can view the names, addresses, and distances of the nearby pharmacies.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;If you choose &amp;quot;Find Nearest Hospital&amp;quot;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;6. The TextBrowser will process your location and display the nearest hospitals based on your address. &lt;br /&gt;7.You can view the names, addresses, and distances of the nearby hospitals.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="overwriteMode">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>491</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>User Guide: Finding Nearest Pharmacy or Hospital Based on Address</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <zorder>label_11</zorder>
+     <zorder>UserForm</zorder>
+     <zorder>result</zorder>
+     <zorder>guide</zorder>
+    </widget>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>menu_widget</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
