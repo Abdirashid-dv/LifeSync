@@ -3,7 +3,7 @@
 LifeSync is a desktop application designed to simplify health management for users. The purpose of this project is to improve my programming skills.
 
 ## Table of Contents
-
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Keys](#api-keys)
@@ -11,6 +11,9 @@ LifeSync is a desktop application designed to simplify health management for use
 - [Email Configuration](#email-configuration)
 - [License](#license)
 - [Contact](#contact)
+
+## Screenshots
+![Screenshot](/Screenshots/main.png)
 
 ## Installation
 
