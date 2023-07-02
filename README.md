@@ -62,7 +62,7 @@ smtp_port = 587
 
 ## License
 
-Include information about the project's license, if applicable.
+LifeSync is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Contact
 
